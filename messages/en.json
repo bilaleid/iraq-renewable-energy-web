@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "siteName": "Iraq Renewable Energy",
+    "siteNameShort": "Iraq Renewable",
+    "homeTitle": "Iraq Renewable Energy | Industrial & Commercial Solar Solutions",
+    "homeDescription": "Iraq Renewable Energy designs, builds and maintains solar power systems for industrial and commercial facilities across Iraq."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cta": "Book a Consultation"
+  },
+  "hero": {
+    "eyebrow": "Clean energy for Iraqi industry & business",
+    "title": "We turn your factory and facility rooftops into solar power plants",
+    "subtitle": "We design, engineer, build and operate complete solar power systems for industrial and commercial clients — cutting energy costs and securing electrical independence for your facility.",
+    "ctaPrimary": "Book a Free Consultation",
+    "ctaSecondary": "Explore Our Projects",
+    "stat1Value": "40+",
+    "stat1Label": "MW Installed",
+    "stat2Value": "65+",
+    "stat2Label": "Industrial & Commercial Projects",
+    "stat3Value": "18",
+    "stat3Label": "Iraqi Governorates",
+    "stat4Value": "30%",
+    "stat4Label": "Average Bill Savings"
+  },
+  "sectorsSection": {
+    "title": "Specialized in Industrial & Commercial Solar",
+    "subtitle": "We understand the demands of high-consumption facilities and engineer precise solutions that fit the way you operate",
+    "industrial": {
+      "title": "Industrial Sector",
+      "description": "High-capacity solar power systems for factories, plants and industrial facilities, engineered to withstand demanding operating environments and continuous production loads."
+    },
+    "commercial": {
+      "title": "Commercial Sector",
+      "description": "Solar solutions for shopping centers, hotels, offices and warehouses — reducing operating costs while strengthening sustainability."
+    }
+  },
+  "servicesSection": {
+    "title": "Our Services",
+    "subtitle": "A complete suite of services covering your project from concept to long-term operation",
+    "viewAll": "View All Services"
+  },
+  "whyUs": {
+    "title": "Why Iraq Renewable Energy?",
+    "item1Title": "Local Engineering Expertise",
+    "item1Desc": "An Iraqi engineering team that understands the local grid and climate challenges.",
+    "item2Title": "Global-Grade Equipment",
+    "item2Desc": "Partnerships with trusted global suppliers of panels, inverters and tracking systems.",
+    "item3Title": "O&M Contracts",
+    "item3Desc": "Regular follow-up and remote performance monitoring to ensure maximum plant output.",
+    "item4Title": "Financial Feasibility Study",
+    "item4Desc": "Accurate payback period and ROI analysis before execution begins."
+  },
+  "projectsSection": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of our completed industrial and commercial projects across Iraq's governorates",
+    "capacity": "Capacity",
+    "sector": "Sector",
+    "location": "Location",
+    "year": "Year",
+    "industrial": "Industrial",
+    "commercial": "Commercial",
+    "viewAll": "View All Projects",
+    "note": "* Figures and images above are illustrative placeholders for this website template and can be replaced with the company's actual project data.",
+    "items": {
+      "p1": {
+        "title": "Solar Power Plant for a Cement Factory",
+        "location": "Basra, Iraq",
+        "description": "Ground-mount solar system powering production lines and reducing generator dependence."
+      },
+      "p2": {
+        "title": "Rooftop System for a Commercial Complex",
+        "location": "Baghdad, Iraq",
+        "description": "Rooftop solar installation covering lighting and cooling loads for a commercial complex."
+      },
+      "p3": {
+        "title": "Power Plant for a Plastics Factory",
+        "location": "Erbil, Iraq",
+        "description": "Hybrid solar-plus-grid solution ensuring production continuity and lower operating costs."
+      },
+      "p4": {
+        "title": "Rooftop System for a Tourist Hotel",
+        "location": "Karbala, Iraq",
+        "description": "Clean power supply for the hotel's common facilities around the clock."
+      },
+      "p5": {
+        "title": "Power Plant for an Industrial Poultry Farm",
+        "location": "Najaf, Iraq",
+        "description": "Stable power supply for ventilation and cooling systems inside the industrial sheds."
+      },
+      "p6": {
+        "title": "Power Plant for Logistics Warehouses",
+        "location": "Basra, Iraq",
+        "description": "Covering a significant share of a logistics distribution center's energy needs."
+      }
+    }
+  },
+  "servicesPage": {
+    "eyebrow": "Our Services",
+    "title": "Complete Solar Solutions for Your Industrial & Commercial Facility",
+    "subtitle": "From feasibility studies to design, supply, installation and operation — we support you at every step of your solar project",
+    "processTitle": "How We Work",
+    "processSubtitle": "A clear methodology that ensures your project is delivered to the highest quality and safety standards",
+    "list": {
+      "s1": {
+        "title": "Industrial Solar Systems",
+        "description": "Design and delivery of high-capacity solar plants for factories and industrial facilities — ground-mount or rooftop — engineered for continuous production loads."
+      },
+      "s2": {
+        "title": "Commercial Solar Systems",
+        "description": "Solutions tailored for shopping centers, hotels, offices and hospitals to cut operating electricity bills."
+      },
+      "s3": {
+        "title": "Engineering, Procurement & Construction (EPC)",
+        "description": "Full project management from engineering design and equipment procurement through installation and commissioning."
+      },
+      "s4": {
+        "title": "Operation & Maintenance (O&M)",
+        "description": "Scheduled maintenance contracts and 24/7 remote performance monitoring to guarantee maximum plant output."
+      },
+      "s5": {
+        "title": "Feasibility Studies & Technical Consulting",
+        "description": "Precise technical and financial analysis of the optimal system size, payback period and return on investment before you decide."
+      },
+      "s6": {
+        "title": "Battery Energy Storage Solutions",
+        "description": "Integrated storage systems ensuring continuous power supply during grid outages or peak demand hours."
+      }
+    },
+    "process": {
+      "step1Title": "Assessment & Site Visit",
+      "step1Desc": "Site study, consumption bill review, and determining the optimal system load.",
+      "step2Title": "Design & Feasibility Study",
+      "step2Desc": "Detailed engineering design with a clear financial cost-benefit analysis.",
+      "step3Title": "Procurement & Installation",
+      "step3Desc": "Sourcing certified equipment and installing it to international safety standards.",
+      "step4Title": "Operation & Follow-up",
+      "step4Desc": "Commissioning, staff training, and a long-term maintenance contract."
+    },
+    "cta": {
+      "title": "Ready to Study Your Project?",
+      "subtitle": "Book an initial consultation with our engineering team and start your transition to solar power",
+      "button": "Book a Consultation"
+    }
+  },
+  "projectsPage": {
+    "eyebrow": "Our Work",
+    "title": "Featured Projects",
+    "subtitle": "A curated selection of our industrial and commercial projects across Iraq's governorates",
+    "filterAll": "All",
+    "filterIndustrial": "Industrial",
+    "filterCommercial": "Commercial",
+    "cta": {
+      "title": "Have a Similar Project?",
+      "subtitle": "Let us assess your facility and propose the best solution to cut your energy costs",
+      "button": "Contact Us"
+    }
+  },
+  "contactPage": {
+    "eyebrow": "Contact Us",
+    "title": "Let's Talk About Your Solar Project",
+    "subtitle": "Our team is ready to answer your questions and discuss your industrial or commercial project in detail",
+    "infoTitle": "Contact Information",
+    "address": "Baghdad, Iraq",
+    "phone": "+964 770 000 0000",
+    "email": "info@iraqrenewable.com",
+    "hours": "Sun - Thu: 9:00 AM - 5:00 PM",
+    "formTitle": "Send Us a Message",
+    "form": {
+      "name": "Full Name",
+      "company": "Company / Facility Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "sector": "Facility Type",
+      "sectorIndustrial": "Industrial",
+      "sectorCommercial": "Commercial",
+      "sectorOther": "Other",
+      "message": "Message Details",
+      "messagePlaceholder": "Tell us about your facility and approximate electricity consumption...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "successTitle": "Your message has been received",
+      "successDesc": "Our team will get back to you within 24 business hours.",
+      "errorGeneric": "Something went wrong. Please try again."
+    }
+  },
+  "consultation": {
+    "eyebrow": "Paid Consultation",
+    "title": "Book a Specialized Technical Consultation",
+    "subtitle": "A site visit and preliminary technical report from our engineers to assess your facility, size the optimal system, and estimate the expected return on investment.",
+    "feeLabel": "Consultation Booking Fee",
+    "feeNote": "This fee is deducted from the project cost if you proceed with us for the full installation.",
+    "includesTitle": "The Consultation Includes",
+    "include1": "On-site visit to your facility",
+    "include2": "Electricity bill analysis",
+    "include3": "Preliminary design and system sizing",
+    "include4": "Initial financial feasibility report",
+    "form": {
+      "title": "Booking Details",
+      "projectType": "Project Type",
+      "projectTypeIndustrial": "Industrial",
+      "projectTypeCommercial": "Commercial",
+      "siteLocation": "Facility Location (Governorate)",
+      "monthlyBill": "Average Monthly Electricity Bill (approx., in USD)",
+      "preferredDate": "Preferred Visit Date",
+      "notes": "Additional Notes",
+      "notesPlaceholder": "Any additional details you'd like to share with us",
+      "payButton": "Pay & Book via Stripe",
+      "processing": "Redirecting to secure checkout...",
+      "secureNote": "Payment is fully secured by Stripe. Your card details are never stored on our servers.",
+      "errorGeneric": "Could not start the payment process. Please try again or contact us directly.",
+      "errorRequired": "Please fill in all required fields."
+    }
+  },
+  "consultationResult": {
+    "successTitle": "Your Consultation is Confirmed!",
+    "successDesc": "Thank you. We've received your payment and our technical team will contact you within 24 business hours to schedule the visit.",
+    "backHome": "Back to Home",
+    "cancelTitle": "Payment Canceled",
+    "cancelDesc": "Your payment was not completed. You can try again at any time or contact us directly.",
+    "tryAgain": "Try Again"
+  },
+  "footer": {
+    "description": "Iraq Renewable Energy — your specialized partner for industrial and commercial solar solutions in Iraq.",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Our Services",
+    "contactTitle": "Contact Us",
+    "rights": "All rights reserved"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "required": "*"
+  }
+}

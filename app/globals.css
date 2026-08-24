@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbfaf7;
+  --foreground: #12261e;
+
+  /* Brand palette (renewable-energy green + solar gold).
+     Swap these once the official logo file is available. */
+  --brand-green-950: #06231a;
+  --brand-green-900: #0a3327;
+  --brand-green-800: #0f4a37;
+  --brand-green-700: #146349;
+  --brand-green-600: #1a7d5c;
+  --brand-green-500: #219a72;
+  --brand-green-100: #e3f3ec;
+  --brand-green-50: #f2f9f6;
+
+  --brand-gold-600: #b8860f;
+  --brand-gold-500: #d79f1e;
+  --brand-gold-400: #f0b62c;
+  --brand-gold-300: #f6cc5e;
+  --brand-gold-100: #fdf1d6;
+
+  --brand-sand-50: #fbfaf7;
+  --brand-ink-900: #12261e;
+  --brand-ink-600: #3f5750;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-brand-green-950: var(--brand-green-950);
+  --color-brand-green-900: var(--brand-green-900);
+  --color-brand-green-800: var(--brand-green-800);
+  --color-brand-green-700: var(--brand-green-700);
+  --color-brand-green-600: var(--brand-green-600);
+  --color-brand-green-500: var(--brand-green-500);
+  --color-brand-green-100: var(--brand-green-100);
+  --color-brand-green-50: var(--brand-green-50);
+
+  --color-brand-gold-600: var(--brand-gold-600);
+  --color-brand-gold-500: var(--brand-gold-500);
+  --color-brand-gold-400: var(--brand-gold-400);
+  --color-brand-gold-300: var(--brand-gold-300);
+  --color-brand-gold-100: var(--brand-gold-100);
+
+  --color-brand-sand-50: var(--brand-sand-50);
+  --color-brand-ink-900: var(--brand-ink-900);
+  --color-brand-ink-600: var(--brand-ink-600);
+
+  --font-sans: var(--font-cairo);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+[dir="rtl"] .flip-rtl {
+  transform: scaleX(-1);
+}
