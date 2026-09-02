@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HUR-UAV-01 | FLYZONE — Smart Navigation Beyond GPS</title>
+<meta name="description" content="HUR-UAV-01 by FLYZONE (Istanbul): an intelligent multirotor UAV platform for autonomous flight in GPS-denied environments, combining optical flow, LiDAR and AI-powered object detection. For companies, universities and Teknofest teams.">
+<meta property="og:title" content="HUR-UAV-01 | FLYZONE — Smart Navigation Beyond GPS">
+<meta property="og:description" content="An intelligent UAV platform for GPS-denied environments. FLYZONE - Istanbul. For companies, universities and Teknofest teams.">
+<meta property="og:image" content="assets/img/drone-front.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/flyzone-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===================== Header ===================== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#hero" class="brand">
+      <img src="assets/img/flyzone-logo.png" alt="FLYZONE">
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#usecases">Use Cases</a></li>
+        <li><a href="#specs">Specifications</a></li>
+        <li><a href="#why">Why FLYZONE</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch">
+        <a href="ar.html">AR</a>
+        <a href="tr.html">TR</a>
+        <a href="en.html" class="active">EN</a>
+      </div>
+      <a href="#" class="btn btn-whatsapp btn-sm" data-whatsapp-link target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.5.7 4.8 1.9 6.8L3 29l6.7-2.1c1.9 1 4.1 1.6 6.3 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.1c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1.2 1.2-3.9-.3-.4a10.4 10.4 0 0 1-1.6-5.6C5.3 9.8 10.1 5 16 5s10.7 4.8 10.7 10.7S21.9 26.1 16 26.1zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6a.6.6 0 0 0 0-.6c-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.6 3.6 0 0 0-1.1 2.6c0 1.5 1.1 3 1.3 3.2.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5s-.3-.2-.6-.4z"/></svg>
+        WhatsApp
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== Hero ===================== -->
+<section class="hero" id="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">FLYZONE · Istanbul, Türkiye</p>
+      <h1 class="reveal">HUR-UAV-01</h1>
+      <span class="hero-sub reveal">Smart Navigation Beyond GPS</span>
+      <p class="hero-desc reveal">An advanced multirotor UAV platform engineered for stable, precise flight where GPS signals are weak or unavailable. Its sensor-fusion architecture combines optical flow, LiDAR, barometric and inertial data to support controlled flight in the most demanding field conditions.</p>
+      <div class="hero-actions reveal">
+        <a href="#" class="btn btn-whatsapp" data-whatsapp-link target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.5.7 4.8 1.9 6.8L3 29l6.7-2.1c1.9 1 4.1 1.6 6.3 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.1c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1.2 1.2-3.9-.3-.4a10.4 10.4 0 0 1-1.6-5.6C5.3 9.8 10.1 5 16 5s10.7 4.8 10.7 10.7S21.9 26.1 16 26.1zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6a.6.6 0 0 0 0-.6c-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.6 3.6 0 0 0-1.1 2.6c0 1.5 1.1 3 1.3 3.2.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5s-.3-.2-.6-.4z"/></svg>
+          Chat With Us Now
+        </a>
+        <a href="#" class="btn btn-outline" data-phone-link>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1-1.1 1C10.9 21 3 13.1 3 3.1 3 2.5 3.5 2 4.1 2H7.5c.6 0 1.1.5 1.1 1.1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
+          Call Now
+        </a>
+        <a href="#contact" class="btn btn-outline">Request a Technical Consultation</a>
+      </div>
+      <div class="hero-tags reveal">
+        <span class="tag">Search &amp; Rescue</span>
+        <span class="tag">Urban Operations</span>
+        <span class="tag">GPS-Denied Environments</span>
+        <span class="tag">3-Day Delivery</span>
+      </div>
+    </div>
+
+    <div class="hero-media reveal">
+      <div class="hero-media-frame">
+        <img src="assets/img/drone-front.jpg" alt="FLYZONE HUR-UAV-01 UAV platform - front view" loading="eager">
+      </div>
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3zm0 9.6L8.4 9.9 9.8 8.5 12 9.6l2.2-1.1 1.4 1.4L12 11.6z"/></svg>
+        Immune to GPS Jamming
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-strip">
+    <div class="container stats-grid">
+      <div class="stat reveal"><span class="stat-num" data-count="17">0</span><span class="stat-label">Min Flight Time</span></div>
+      <div class="stat reveal"><span class="stat-num" data-count="2.5" data-decimals="1">0</span><span class="stat-label">Km Operational Range</span></div>
+      <div class="stat reveal"><span class="stat-num" data-count="150">0</span><span class="stat-label">M Max Altitude</span></div>
+      <div class="stat reveal"><span class="stat-num" data-count="3.5" data-decimals="1">0</span><span class="stat-label">Kg Max Take-off Weight</span></div>
+      <div class="stat reveal"><span class="stat-num" data-count="3">0</span><span class="stat-label">Day Delivery</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== About ===================== -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal">
+      <img src="assets/img/drone-angle.jpg" alt="HUR-UAV-01 angled view showing sensor details" loading="lazy">
+    </div>
+    <div class="about-text reveal">
+      <p class="eyebrow">About Us</p>
+      <h2>FLYZONE: Smart Flight Engineering From the Heart of Istanbul</h2>
+      <p class="section-lead">FLYZONE is a leading developer of cutting-edge drone technology. Our expertise lies in engineering high-performance flight systems and integrated software solutions, providing the tools necessary for safer, smarter, and more efficient aerial operations.</p>
+      <p>Our engineering team operates out of Zaim Teknopark at Istanbul Sabahattin Zaim University, within a research-driven environment that supports the continuous development of the HUR-UAV-01 platform in collaboration with universities, research centers and Teknofest teams.</p>
+      <div class="about-facts">
+        <div class="about-fact"><strong>Headquarters</strong><span>Istanbul, Türkiye</span></div>
+        <div class="about-fact"><strong>Specialty</strong><span>GPS-denied autonomous navigation</span></div>
+        <div class="about-fact"><strong>Hardware</strong><span>Open-source, customizable architecture</span></div>
+        <div class="about-fact"><strong>Support</strong><span>Direct 24/7 contact via WhatsApp</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Technology ===================== -->
+<section class="section section-alt" id="technology">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Technology</p>
+      <h2>An Integrated Sensor Architecture for Reliable Flight Without GPS</h2>
+      <p class="section-lead">HUR-UAV-01 brings together multiple layers of sensing and rugged field engineering, so flight stays stable and precise even when satellite signal is unavailable.</p>
+    </div>
+
+    <div class="tech-group reveal">
+      <div class="tech-group-head">
+        <span class="tech-group-num">01</span>
+        <div><h3>GPS-Denied Navigation</h3><p>Precision stabilization without relying on GPS</p></div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-optical-flow-camera.png" alt="">
+          <h4>Optical Flow Camera</h4>
+          <p>Tracks ground motion frame-by-frame, with an effective ceiling of up to 35 meters.</p>
+        </div>
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-lidar-sensor.png" alt="">
+          <h4>LiDAR Distance Sensor</h4>
+          <p>High-speed altitude measurement from 0.1 m up to 40 m.</p>
+        </div>
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-advanced-ekf.png" alt="">
+          <h4>Improved EKF</h4>
+          <p>Fuses optical flow, barometer and magnetometer data to reduce IMU drift and support position hold.</p>
+        </div>
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-sensor-fusion.png" alt="">
+          <h4>Multi-Sensor Fusion</h4>
+          <p>Integrates camera, barometer, magnetometer and IMU data into a single decision model.</p>
+        </div>
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-immune-gps-jamming.png" alt="">
+          <h4>Immune to GPS Jamming</h4>
+          <p>Stable flight with no reliance on any external signal.</p>
+        </div>
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-dual-mode.png" alt="">
+          <h4>Dual Operating Modes</h4>
+          <p>Operate with GPS or in GPS-denied mode, switching according to the mission scenario.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-group reveal">
+      <div class="tech-group-head">
+        <span class="tech-group-num">02</span>
+        <div><h3>AI Object Detection &amp; Tracking</h3><p>Intelligent visual awareness</p></div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-ai-detection.png" alt="">
+          <h4>Automatic Object Detection &amp; Tracking</h4>
+          <p>Integrated computer vision automatically detects and tracks targets, with reported confidence levels up to 75% depending on target, scene and model configuration.</p>
+        </div>
+      </div>
+      <p class="feature-note">* Actual detection and tracking performance varies by scene, target, lighting and field conditions.</p>
+    </div>
+
+    <div class="tech-group reveal">
+      <div class="tech-group-head">
+        <span class="tech-group-num">03</span>
+        <div><h3>Engineering &amp; Reliability</h3><p>Designed for demanding field conditions</p></div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-dual-imu.png" alt="">
+          <h4>Dual-IMU</h4>
+          <p>Redundant inertial sensing for a more robust estimate of flight state.</p>
+        </div>
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-stm32-flight-controller.png" alt="">
+          <h4>STM32 Flight Controller</h4>
+          <p>Fast embedded processing for real-time flight control.</p>
+        </div>
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-dual-vibration-isolation.png" alt="">
+          <h4>Dual Vibration Isolation</h4>
+          <p>Dedicated damping for the flight controller and guidance sensors.</p>
+        </div>
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-open-source-hardware.png" alt="">
+          <h4>Open-Source Hardware</h4>
+          <p>A flexible, modifiable architecture — ideal for research and Teknofest projects.</p>
+        </div>
+        <div class="feature-card">
+          <img class="feature-icon" src="assets/img/icon-battery-swap.png" alt="">
+          <h4>Rapid Battery Swap</h4>
+          <p>Integrated locking and quick-change workflow that maximizes real time in the field.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Use cases ===================== -->
+<section class="section" id="usecases">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Who It's For</p>
+      <h2>One Platform, Many Needs in the Turkish Market</h2>
+      <p class="section-lead">HUR-UAV-01 is built to serve different sectors that need reliable flight in demanding or GPS-denied environments.</p>
+    </div>
+    <div class="usecase-grid">
+      <div class="usecase-card reveal">
+        <div class="usecase-icon"><svg viewBox="0 0 24 24"><path d="M3 21V7l7-4 7 4v3h4v11h-8v-4h-2v4H3zm2-2h2v-2H5v2zm0-4h2v-2H5v2zm0-4h2V9H5v2zm4 8h2v-2H9v2zm0-4h2v-2H9v2zm0-4h2V9H9v2zm5 8h6v-7h-6v7zm2-5h2v2h-2v-2z"/></svg></div>
+        <h4>Companies &amp; Industry</h4>
+        <ul>
+          <li>Industrial mapping and inspection</li>
+          <li>Field security and surveillance</li>
+          <li>Urban operations without relying on GPS</li>
+          <li>Rapid response in sensitive sites</li>
+        </ul>
+      </div>
+      <div class="usecase-card reveal">
+        <div class="usecase-icon"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2V17c0 2 3.1 4 7 4s7-2 7-4v-3.8l-7 3.8-7-3.8z"/></svg></div>
+        <h4>Universities &amp; Research Centers</h4>
+        <ul>
+          <li>Open-source R&amp;D platform</li>
+          <li>Graduate, master's and PhD projects</li>
+          <li>Sensor-fusion and autonomous-navigation research</li>
+          <li>Custom payload and software</li>
+        </ul>
+      </div>
+      <div class="usecase-card reveal">
+        <div class="usecase-icon"><svg viewBox="0 0 24 24"><path d="M18 4V2H6v2H2v3c0 2.5 1.9 4.5 4.3 4.9.6 1.6 1.9 2.9 3.7 3.4V17H7v2H6v2h12v-2h-1v-2h-3v-2.7c1.8-.5 3.1-1.8 3.7-3.4C20.1 9.5 22 7.5 22 5V4h-4zM4 5V4h2v3.8C4.8 7.4 4 6.3 4 5zm16 0c0 1.3-.8 2.4-2 2.8V4h2v1z"/></svg></div>
+        <h4>Teknofest &amp; Academic Teams</h4>
+        <ul>
+          <li>Ready-made platform for GPS-denied navigation algorithms</li>
+          <li>On-the-ground technical support from an Istanbul-based team</li>
+          <li>Spare parts availability and fast response</li>
+          <li>3-day delivery</li>
+        </ul>
+      </div>
+      <div class="usecase-card reveal">
+        <div class="usecase-icon"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3zm0 9.6L8.4 9.9 9.8 8.5 12 9.6l2.2-1.1 1.4 1.4L12 11.6z"/></svg></div>
+        <h4>Government &amp; Institutions</h4>
+        <ul>
+          <li>Search and rescue operations</li>
+          <li>Emergency response in complex urban environments</li>
+          <li>Training programs for technical teams</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Specs ===================== -->
+<section class="section section-alt" id="specs">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Technical Specifications</p>
+      <h2>Real Numbers From the HUR-UAV-01 Technical Brochure</h2>
+    </div>
+    <div class="specs-grid">
+      <div class="spec-card reveal"><div class="spec-value"><span data-count="3">0</span><small>kg</small></div><div class="spec-label">Net Weight</div></div>
+      <div class="spec-card reveal"><div class="spec-value"><span data-count="3.5" data-decimals="1">0</span><small>kg</small></div><div class="spec-label">Max Take-off Weight (MTOW)</div></div>
+      <div class="spec-card reveal"><div class="spec-value"><span data-count="17">0</span><small>min</small></div><div class="spec-label">Flight Time (Up to)</div></div>
+      <div class="spec-card reveal"><div class="spec-value"><span data-count="2.5" data-decimals="1">0</span><small>km</small></div><div class="spec-label">Operational Range (Up to)</div></div>
+      <div class="spec-card reveal"><div class="spec-value"><span data-count="2.5" data-decimals="1">0</span><small>m/s</small></div><div class="spec-label">Flight Speed</div></div>
+      <div class="spec-card reveal"><div class="spec-value"><span data-count="150">0</span><small>m</small></div><div class="spec-label">Max Altitude</div></div>
+      <div class="spec-card reveal"><div class="spec-value"><span data-count="35">0</span><small>m</small></div><div class="spec-label">Optical Flow Range (Up to)</div></div>
+      <div class="spec-card reveal"><div class="spec-value">-20° / +35°</div><div class="spec-label">Operating Temperature</div></div>
+    </div>
+    <p class="specs-source">* The values above are taken from the official HUR-UAV-01 (FLYZONE) technical brochure and may vary with payload configuration and operating conditions.</p>
+  </div>
+</section>
+
+<!-- ===================== Why us ===================== -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Why FLYZONE</p>
+      <h2>A Trusted Technology Partner for the Turkish Market</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/></svg></div>
+        <div><h4>Unique Expertise in GPS-Denied Navigation</h4><p>Built around the needs of complex urban areas and regions without reliable satellite signal.</p></div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M8 3 3 6v3l5-3 5 3V6L8 3zm8 0-5 3v3l5-3 5 3V6l-5-3zM8 12l-5 3v3l5-3 5 3v-3l-5-3zm8 0-5 3v3l5-3 5 3v-3l-5-3z"/></svg></div>
+        <div><h4>Open-Source Hardware</h4><p>A customizable, modifiable architecture suited to university projects and Teknofest teams.</p></div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2V17c0 2 3.1 4 7 4s7-2 7-4v-3.8l-7 3.8-7-3.8z"/></svg></div>
+        <div><h4>An Engineering Team Based on Campus</h4><p>We operate out of Zaim Teknopark at Istanbul Sabahattin Zaim University, within a supportive research environment.</p></div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 5v5.4l4.2 2.5-.8 1.3-5.1-3V7h1.7z"/></svg></div>
+        <div><h4>Fast 3-Day Delivery</h4><p>Ongoing field and technical support after delivery.</p></div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.5.7 4.8 1.9 6.8L3 29l6.7-2.1c1.9 1 4.1 1.6 6.3 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3z" transform="scale(0.7) translate(2,1)"/></svg></div>
+        <div><h4>A Direct WhatsApp Line</h4><p>Available 24/7, with an AI-assisted instant-reply assistant coming online soon.</p></div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 9h-3.1a15 15 0 0 0-1.2-5.3A8 8 0 0 1 18.9 11zM12 4c.9 1.4 1.6 3.2 1.9 5H10.1C10.4 7.2 11.1 5.4 12 4zM4.1 13h3.1c.2 1.9.6 3.7 1.2 5.3A8 8 0 0 1 4.1 13zm3.1-2H4.1a8 8 0 0 1 4.3-5.3A15 15 0 0 0 7.2 11zM12 20c-.9-1.4-1.6-3.2-1.9-5h3.8c-.3 1.8-1 3.6-1.9 5zm2.1-1.7c.6-1.6 1-3.4 1.2-5.3h3.1a8 8 0 0 1-4.3 5.3z"/></svg></div>
+        <div><h4>Support in Three Languages</h4><p>Arabic, Turkish and English — covering the full range of customers and partners.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Gallery ===================== -->
+<section class="section section-alt" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Gallery</p>
+      <h2>A Closer Look at HUR-UAV-01</h2>
+    </div>
+    <div class="gallery-grid">
+      <button class="gallery-item reveal" data-full="assets/img/drone-front.jpg" data-caption="HUR-UAV-01 — Front View">
+        <img src="assets/img/drone-front.jpg" alt="HUR-UAV-01 front view" loading="lazy">
+      </button>
+      <button class="gallery-item reveal" data-full="assets/img/drone-angle.jpg" data-caption="HUR-UAV-01 — Close-Up Angled View">
+        <img src="assets/img/drone-angle.jpg" alt="HUR-UAV-01 angled view" loading="lazy">
+      </button>
+      <button class="gallery-item reveal" data-full="assets/img/drone-studio.jpg" data-caption="HUR-UAV-01 — Sensor &amp; Payload Unit">
+        <img src="assets/img/drone-studio.jpg" alt="HUR-UAV-01 sensor unit" loading="lazy">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">FAQ</p>
+      <h2>Everything You Need to Know Before Reaching Out</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>Can the platform be customized for research or Teknofest projects?</summary>
+        <p>Yes. The hardware is open-source by design, which allows the payload, software and navigation algorithms to be adapted to your research project or competition challenge.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does it really fly without a GPS signal?</summary>
+        <p>Yes — through the integration of optical flow, LiDAR, barometric data and an improved EKF, with the ability to switch between GPS and GPS-denied modes depending on the mission scenario.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How accurate is the AI object detection?</summary>
+        <p>Detection and tracking confidence can reach up to 75%, depending on the target, scene and model configuration; actual performance varies by mission conditions.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How fast is delivery within Turkey?</summary>
+        <p>Standard delivery is within 3 days of order confirmation.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is technical support and training provided after purchase?</summary>
+        <p>Yes, our engineering team provides technical support and training for operating teams, with a direct WhatsApp line available 24/7.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I get a quote for my institution or university?</summary>
+        <p>Reach out via WhatsApp or the contact form below, and our team will respond with a tailored quote and technical consultation.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Contact ===================== -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's Talk About Your Project</h2>
+      <p class="section-lead">Our team in Istanbul is ready to answer your technical and commercial questions, and provide tailored consultation for your company, university or Teknofest team.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card reveal">
+        <h3>Direct Contact Information</h3>
+        <div class="contact-line">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.5.7 4.8 1.9 6.8L3 29l6.7-2.1c1.9 1 4.1 1.6 6.3 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3z"/></svg>
+          <a href="#" data-whatsapp-link target="_blank" rel="noopener">WhatsApp: 00 90 536 697 62 22</a>
+        </div>
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1-1.1 1C10.9 21 3 13.1 3 3.1 3 2.5 3.5 2 4.1 2H7.5c.6 0 1.1.5 1.1 1.1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
+          <a href="#" data-phone-link="text"></a>
+        </div>
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.01L12 12l8-5.99V6H4zm16 2.24-8 6-8-6V18h16V8.24z"/></svg>
+          <a href="#" data-email-link="text"></a>
+        </div>
+        <div class="contact-line">
+          <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          <span class="value">Zaim Teknopark, Sabahattin Zaim University, Halkalı Merkez Mah., Küçükçekmece, Istanbul, Türkiye</span>
+        </div>
+        <p class="contact-note">Our team is available around the clock on WhatsApp to answer your questions. An AI assistant will soon be activated to follow up instantly and document every conversation.</p>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="lead-form" data-i18n='{"formError":"Please fill in your name and phone number, and accept to be contacted before submitting.","sending":"Sending...","formSuccess":"Your request has been received — our team will contact you shortly. WhatsApp will open to confirm your inquiry.","submit":"Send Request","waHeader":"New inquiry about HUR-UAV-01:","waName":"Name","waOrg":"Organization type","waPhone":"Phone","waEmail":"Email","waMessage":"Message"}'>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="organization_type">Organization Type *</label>
+              <select id="organization_type" name="organization_type" required>
+                <option value="Company / Private Sector">Company / Private Sector</option>
+                <option value="University or Research Center">University or Research Center</option>
+                <option value="Teknofest or Academic Team">Teknofest or Academic Team</option>
+                <option value="Government Institution">Government Institution</option>
+                <option value="Individual">Individual</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="phone">Phone Number (WhatsApp preferred) *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field full">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project or how you plan to use HUR-UAV-01..."></textarea>
+            </div>
+          </div>
+          <label class="form-consent">
+            <input type="checkbox" name="consent" required>
+            <span>I agree to be contacted by the FLYZONE team by phone, WhatsApp or email regarding this request.</span>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block" id="lead-submit">Send Request</button>
+          <p class="form-note" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== Footer ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/flyzone-logo.png" alt="FLYZONE">
+        <p>FLYZONE is a Turkish technology company developing intelligent UAV systems for GPS-denied navigation, based at Zaim Teknopark, Sabahattin Zaim University, Istanbul.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#usecases">Use Cases</a></li>
+          <li><a href="#specs">Specifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#" data-whatsapp-link target="_blank" rel="noopener">WhatsApp: 00 90 536 697 62 22</a></li>
+          <li><a href="#" data-email-link="text"></a></li>
+          <li><span>Istanbul, Türkiye</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> FLYZONE. All rights reserved.</span>
+      <div class="lang-switch">
+        <a href="ar.html">AR</a>
+        <a href="tr.html">TR</a>
+        <a href="en.html" class="active">EN</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== Floating WhatsApp ===================== -->
+<a href="#" class="floating-whatsapp" data-whatsapp-link target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.5.7 4.8 1.9 6.8L3 29l6.7-2.1c1.9 1 4.1 1.6 6.3 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.1c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1.2 1.2-3.9-.3-.4a10.4 10.4 0 0 1-1.6-5.6C5.3 9.8 10.1 5 16 5s10.7 4.8 10.7 10.7S21.9 26.1 16 26.1zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6a.6.6 0 0 0 0-.6c-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.6 3.6 0 0 0-1.1 2.6c0 1.5 1.1 3 1.3 3.2.2.2 2.2 3.4 5.4 4.7.7.3 1.3.5 1.8.7.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5s-.3-.2-.6-.4z"/></svg>
+</a>
+
+<!-- ===================== Chat widget (ready for AI agent) ===================== -->
+<div class="chat-widget">
+  <div class="chat-panel" id="chat-panel" hidden>
+    <div class="chat-head">
+      <strong>FLYZONE Assistant</strong>
+      <span>Usually replies within minutes</span>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-msg bot">Hello! I'm here to answer your questions about the HUR-UAV-01. How can I help?</div>
+    </div>
+    <form class="chat-form" id="chat-form">
+      <input type="text" id="chat-input" placeholder="Type your message..." autocomplete="off">
+      <button type="submit" aria-label="Send"><svg viewBox="0 0 24 24"><path d="M3 20V4l19 8-19 8zm2-3 11.5-5L5 7v4l6 1-6 1v4z"/></svg></button>
+    </form>
+  </div>
+  <button class="chat-toggle" id="chat-toggle" aria-expanded="false" aria-label="Open chat" data-i18n='{"sent":"Your message has been sent — we will reply shortly.","fallback":"Thanks for reaching out! Instant replies here are coming soon. You can also message us directly on WhatsApp for a faster response."}'>
+    <svg viewBox="0 0 24 24"><path d="M4 4h16v12H7l-3 3V4z"/></svg>
+  </button>
+</div>
+
+<!-- ===================== Lightbox ===================== -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+  <div class="lightbox-inner">
+    <img src="" alt="" id="lightbox-img">
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
