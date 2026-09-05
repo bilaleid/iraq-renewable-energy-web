@@ -248,7 +248,7 @@ function initLeadForm() {
 }
 
 /* ============================================================
-   Chat widget stub — ready for the AI sales agent
+   Chat widget — powered by Claude (see api/chat.php)
    ============================================================ */
 function initChatWidget() {
   const toggle = document.getElementById("chat-toggle");
@@ -259,6 +259,7 @@ function initChatWidget() {
   if (!toggle) return;
 
   const t = toggle.dataset.i18n ? JSON.parse(toggle.dataset.i18n) : {};
+  const history = [];
 
   toggle.addEventListener("click", () => {
     const expanded = toggle.getAttribute("aria-expanded") === "true";
@@ -273,6 +274,7 @@ function initChatWidget() {
     div.textContent = text;
     messages.appendChild(div);
     messages.scrollTop = messages.scrollHeight;
+    return div;
   }
 
   chatForm.addEventListener("submit", async (e) => {
@@ -281,25 +283,38 @@ function initChatWidget() {
     if (!text) return;
 
     appendMessage(text, "user");
+    history.push({ role: "user", content: text });
     chatInput.value = "";
 
-    const payload = {
-      source: "flyzone-hur-uav-01-website",
-      type: "chat_message",
-      lang: currentLang(),
-      message: text,
-      page_url: window.location.href,
-      submitted_at: new Date().toISOString(),
-    };
+    const typing = appendMessage(t.typing || "…", "bot");
 
-    const webhookUrl = SITE_CONFIG.CHAT_WEBHOOK_URL || SITE_CONFIG.LEAD_WEBHOOK_URL;
-    const result = await postToWebhook(webhookUrl, payload);
+    try {
+      const res = await fetch("api/chat.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: text,
+          lang: currentLang(),
+          history: history.slice(-10),
+        }),
+      });
+      const data = await res.json();
 
-    if (result.ok) {
-      appendMessage(t.sent || "Message sent — we'll reply shortly.", "bot");
-    } else {
+      typing.remove();
+
+      if (res.ok && data.reply) {
+        appendMessage(data.reply, "bot");
+        history.push({ role: "assistant", content: data.reply });
+      } else {
+        appendMessage(
+          t.fallback || "Thanks for reaching out! I'm having trouble replying right now — please message us directly on WhatsApp for a faster response.",
+          "bot"
+        );
+      }
+    } catch (err) {
+      typing.remove();
       appendMessage(
-        t.fallback || "Thanks for reaching out! Instant replies here are coming soon. You can also message us directly on WhatsApp for a faster response.",
+        t.fallback || "Thanks for reaching out! I'm having trouble replying right now — please message us directly on WhatsApp for a faster response.",
         "bot"
       );
     }

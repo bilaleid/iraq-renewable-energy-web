@@ -1,0 +1,3 @@
+# Secrets — never commit real API keys.
+# Create this file on the server by copying config.sample.php and filling in the real key.
+drone/api/config.php

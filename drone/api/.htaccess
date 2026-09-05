@@ -1,0 +1,9 @@
+# Defense in depth: never serve the secrets file or rate-limit data directly,
+# even if PHP execution were ever misconfigured for this folder.
+<FilesMatch "^config\.php$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
